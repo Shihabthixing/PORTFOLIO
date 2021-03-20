@@ -46,36 +46,13 @@ function castParallax() {
 //---------------- Scroll Top Nav bar --------------//
 
 
-  // var headerContaine = document.getElementById("wrap");
-  // window.onscroll = function(){scrollFuntion()};
+  var headerContaine = document.getElementById("wrap");
+  window.onscroll = function(){scrollFuntion()};
 
-  // function scrollFuntion(){
-  //   if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-  //     headerContaine.style.background = "#131313ea";
-  //   }
-  // }
-
-
-  //---------------- Auto Typing h2 --------------//
+  function scrollFuntion(){
+    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+      headerContaine.style.background = "#131313ea";
+    }
+  }
 
 
-$("#autoType").typer({
-  strings: [
-    "Des Lorem Ipusm", "3d samples", "We magenet"
-  ]
-});
-
-$("#autoType").typer({
-  
-  typeSpeed: 60,
-  backspaceSpeed: 20,
-  backspaceDelay: 800,
-  repeatDelay: 1000,
-  repeat:true,
-  autoStart: true,
-  startDelay: 100,
-});
-
-$("#autoType").typer({
-  useCursor:true
-});

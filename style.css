@@ -465,6 +465,7 @@ a:hover{
                           font-size: 25px ;
                           font-weight: 600;
                           text-transform: uppercase;
+                          height: 50px;
                         }
                         .text-container .socialmedia{
                           margin-top: 45px;

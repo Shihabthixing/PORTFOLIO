@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Porfolio</title>
     
      <!-- Google Font Link -->
      <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+
      <!-- Google Oswal  -->
      <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
     
+
     <!-- Style Sheet linking  -->
     <link rel="stylesheet" href="./style.css">
 
@@ -27,7 +30,7 @@
 
 <body class="main-body">
 
-    <div id="smoothy"> </div>
+
     
 <!--------------- Navigation Menu  ------------------->
 
@@ -84,8 +87,8 @@
                                     <h4>Hello,I am</h4>
                                     <h1>HAbIhS</h1>
 
-                                    <h3 id="autoType">
-                                        
+                                    <h3 class="type">
+        
                                     </h3>
 
                                     <div class="socialmedia">
@@ -188,16 +191,35 @@
     </main>
 
     
-    <div id="smoothy-bottom"> </div>
+
+    
+    <!-- Jquery Link  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
 
-            <!---- jquery linking  ---->
-
-    <script src="./jquery-3.5.1.min.js"></script>
+    <!-- JavaScript Link  -->
     <script src="./app.js"></script>
-    <script src="typer.min.js"></script>
 
+    <script type="text/javascript" src="typed.js"></script>
 
+    <script type="text/javascript" >
+            var typed = new Typed('.type', {
+        strings : 
+                [
+                "lrem ipsum",
+                "This is dessssss kd dfka",
+                "this is upadeted dsdsdsdsd",
+                "lorem ipsum dasas",
+                "lorem ipsum dasas dsd dw piei",
+                "magnetc of law"
+                ],
+         typeSpeed: 60,
+         backSpeed: 20,
+         loop: true,
+        smartBackspace: true
+        });
+        
+    </script>
 
 </body>
 </html>

@@ -45,14 +45,26 @@ function castParallax() {
   
 //---------------- Scroll Top Nav bar --------------//
 
+window.onscroll = function() {scrollFuntion()};
 
-  var headerContaine = document.getElementById("wrap");
-  window.onscroll = function(){scrollFuntion()};
+var headerDiv = document.getElementById("wrap");
+var logoDiv = document.getElementById("logo");
+var menu = document.getElementById("menuDcrease");
 
-  function scrollFuntion(){
-    if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-      headerContaine.style.background = "#131313ea";
-    }
-  }
-
-
+      function scrollFuntion(){
+        if (document.documentElement.scrollTop > 350){
+              headerDiv.style.backgroundColor = "#131313ea";
+              logoDiv.style.width ="100px";
+              logoDiv.style.paddingTop = "3px";
+              menu.style.top = "-2px";
+              menu.style.fontSize = "14px"
+              } 
+              else{
+              headerDiv.style.backgroundColor = "transparent";
+              logoDiv.style.width ="150px";
+              logoDiv.style.paddingTop = "15px";
+              menu.style.top = "15px";
+              menu.style.fontSize = "16px"
+              }
+        
+      }

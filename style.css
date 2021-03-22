@@ -215,21 +215,22 @@ a:hover{
                           display: flex;
                           align-items: center;
                           justify-content: space-between;
-                          width: 65%;
+                          width: calc(75%);
                           margin: 50px 0px 15px 0px;
                         }
 
                         .header .sidemenu footer .social li a {
                           display: block;
                           text-align: center;
-                          width: 55px;
-                          height: 55px;
-                          transition: .4s ease;
+                          width: 50px;
+                          height: 50px;
+                          transition: .3s ease;
                           border-radius: 50%;
                           background: linear-gradient(0deg, var(--Grd-Dark), var(--Grd-Light));
                           box-sizing: border-box;
                           box-shadow: 0 10px 18px #000000;
-                          padding: 4px;
+                          padding: 3.5px;
+                          margin: 0px 10px 15px 0px;
                         }
 
                         .header .sidemenu footer .social li a:hover{
@@ -242,42 +243,24 @@ a:hover{
                           height: 100%;
                           display: block;
                           border-radius: 50%;
-                          line-height: calc(55px - 8px);
-                          font-size: 22px;
+                          line-height: calc(50px - 8px);
+                          font-size: 20px;
                           color: var(--GrayLetter) ;
                           transition: .4s ease;
                         }
                         .header .sidemenu footer .social li:nth-child(1) a:hover .fa{
-                          color: ;
-                          text-shadow: 0 0 15px #cf2e9c ;
+                          color: #e0228f;
                         }
-
-
-
-
-
-                        /*--- Social Meida Hover Colours ---  */
-
-                        /* .header .sidemenu footer .social .a .fa-instagram:hover  {
-                          color: #bc2a8d;
-                          text-shadow: 0 0 15px #cf2e9c ;
-                          box-shadow: 0 10px 15px #000000;
+                        .header .sidemenu footer .social li:nth-child(2) a:hover .fa{
+                          color: #5f8cdf;
                         }
-                        .header .sidemenu footer .social .a:hover.fa-facebook  {
-                          color: #4f75c7;
-                          text-shadow: 0 0 15px #4769b3 ;
-                          box-shadow: 0 10px 15px #000000;
-                        }
-                        .header .sidemenu footer .social .a:hover.fa-whatsapp  {
+                        .header .sidemenu footer .social li:nth-child(3) a:hover .fa{
                           color: #4dc247;
-                          text-shadow: 0 0 15px #4dc247 ;
-                          box-shadow: 0 10px 15px #000000;
                         }
-                        .header .sidemenu footer .social .a:hover.fa-twitter  {
-                          color: #00aced;
-                          text-shadow: 0 0 15px #00aced ;
-                          box-shadow: 0 10px 15px #000000;
-                        } */
+                        .header .sidemenu footer .social li:nth-child(4) a:hover .fa{
+                          color: #55acee;
+                        }
+
 
                         footer p{
                           letter-spacing: 2px;

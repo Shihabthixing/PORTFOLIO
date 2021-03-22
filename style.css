@@ -79,7 +79,7 @@ a:hover{
   padding: 10px 20px;
 }
 .header .menu li a {
-  font-weight: 400;
+  font-weight: 500;
   color: var(--whiteLetter);
   text-decoration: none;
   -webkit-background-clip: text;
@@ -468,13 +468,14 @@ a:hover{
                           text-transform: uppercase;
                         }
                         .text-container h3{
-                          font-size: 25px ;
+                          font-size: 23px ;
                           font-weight: 600;
                           text-transform: uppercase;
                           height: 50px;
+                          width: 340px;
                         }
                         .text-container .socialmedia{
-                          margin-top: 45px;
+                          margin-top: 10px;
                           pointer-events: none;
                         }
                         .text-container .socialmedia .fa {
@@ -612,14 +613,10 @@ a:hover{
   display: none;
 }
 
-.header .logo{
-padding: 0px 0px 0px 0px;
-}
-
 .wrap{
   height:  43px;
   justify-content: start;
-  padding: 15px;
+  padding: 0px 15px;
 }
 
                 /* ----- Left container-----  */

@@ -17,7 +17,7 @@ html{
     scroll-behavior: smooth;
 }
 .main-body{
-    background: red;
+    background: black;
 }
 body{
     height: 100vh;
@@ -347,8 +347,7 @@ a:hover{
                             padding-top: 70px;
                           }
                           .header .sidemenu footer .social{
-                            width: 100%;
-                            display: inline-block;
+                            width: 75%;
                             text-align: center;
                             margin: 50px auto 15px auto ;
                           }
@@ -484,7 +483,9 @@ a:hover{
               mix-blend-mode: multiply;
             }
                   .text-container{
-                    max-width: 302px; 
+                    max-width: 302px;
+                    height: 0px; 
+                    background: gray;
                   }
                         .text-container h4{
                           background: #ff0000b9;
@@ -510,18 +511,24 @@ a:hover{
                           font-size: 23px ;
                           font-weight: 600;
                           text-transform: uppercase;
-                          height: 50px;
-                          width: 340px;
+                          width: 300px;
                         }
+                        .text-container #type{
+                          width: 0.5em;
+                          height: 1em;
+                          display: inline;
+                        }
+                        
                         .text-container .socialmedia{
-                          margin-top: 10px;
+                          margin-top: 40px;
                           pointer-events: none;
                         }
                         .text-container .socialmedia .fa {
                           transition: all 0.4s ease;
                           font-size: 22px;
                           margin: 0px 15px 0px 0px ;
-                          color: var(--red-color);
+                          color: var(--whiteLetter);
+                          cursor: pointer;
                         }
                         
 /*--- Social Meida Hover Colours ---  */
@@ -664,14 +671,13 @@ a:hover{
                 .left-container{
                   padding: 0px;
                   justify-content: center;
-                  align-items: flex-start;
                   margin-top: 320px;
                 }
                     .text-container{
                       max-width: 100%;
                       text-align: left;
                       position: absolute;
-                      top: 300px;
+                      top: 350px;
                       
                     }
                        
@@ -698,7 +704,7 @@ a:hover{
                         }
                         
                   .img-container{
-                    width: 180px;
+                    width: 230px;
                     position: absolute;
                     top: 90px;
                     z-index: -1;

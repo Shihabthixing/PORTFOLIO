@@ -133,9 +133,6 @@ a:hover{
                           transition: 0.1s all; 
                           transition: .1s all; 
                         }
-                        .header .sidemenu-toggler:hover > span{
-                          background: var(--red-color);
-                        }
 
                         .header .sidemenu-toggler > span:nth-child(2){
                           margin: 4px 0px 4px auto;
@@ -164,7 +161,7 @@ a:hover{
                           height: 100vh;
                           padding: 4rem;
                           transform: translate3d(100%, 0, 0);
-                          transition: transform .5s ease-in-out;
+                          transition: transform .5s ease;
                           overflow: hidden;
                           z-index: 11;
                           font-family: 'Oswald', sans-serif;
@@ -228,8 +225,8 @@ a:hover{
                           border-radius: 50%;
                           background: linear-gradient(0deg, var(--Grd-Dark), var(--Grd-Light));
                           box-sizing: border-box;
-                          box-shadow: 0 10px 18px #000000;
-                          padding: 3.5px;
+                          box-shadow: 0 8px 10px #000000;
+                          padding: 3px;
                           margin: 0px 15px 15px 0px;
                         }
 
@@ -292,7 +289,7 @@ a:hover{
                           border-radius: 50%;
                           padding: 14px;
                           margin: -14px 0px 0px -14px;
-                          box-shadow: 0 10px 18px #000000;
+                          box-shadow: 0 5px 14px #000000;
                           transition: 0.3s all;
                         }
 
@@ -484,8 +481,6 @@ a:hover{
             }
                   .text-container{
                     max-width: 302px;
-                    height: 0px; 
-                    background: gray;
                   }
                         .text-container h4{
                           background: #ff0000b9;
@@ -507,28 +502,46 @@ a:hover{
                           margin-left: -5px;
                           text-transform: uppercase;
                         }
-                        .text-container h3{
-                          font-size: 23px ;
-                          font-weight: 600;
-                          text-transform: uppercase;
-                          width: 300px;
-                        }
                         .text-container #type{
                           width: 0.5em;
                           height: 1em;
                           display: inline;
+                          font-size: 25px ;
+                          font-weight: 600;
                         }
                         
                         .text-container .socialmedia{
                           margin-top: 40px;
-                          pointer-events: none;
+                          display: flex;
+                          flex-wrap: wrap;
                         }
-                        .text-container .socialmedia .fa {
-                          transition: all 0.4s ease;
-                          font-size: 22px;
-                          margin: 0px 15px 0px 0px ;
+                        .text-container .socialmedia .fa{
+                          font-size: 25px;
+                          margin: 0px 25px 0px 0px ;
                           color: var(--whiteLetter);
                           cursor: pointer;
+                          transition: all .2s ease-in-out;
+                        }
+                        
+                        .text-container .socialmedia li:nth-child(1) a:hover .fa{
+                          color: #e0228f;
+                          transform: scale(1.2);
+                        }
+                        .text-container .socialmedia li:nth-child(2) a:hover .fa{
+                          color: #5f8cdf;
+                          transform: scale(1.2);
+                        }
+                        .text-container .socialmedia li:nth-child(3) a:hover .fa{
+                          color: #4dc247;
+                          transform: scale(1.2);
+                        }
+                        .text-container .socialmedia li:nth-child(4) a:hover .fa{
+                          color: #55acee;
+                          transform: scale(1.2);
+                        }
+                        .text-container .socialmedia li:nth-child(5) a:hover .fa{
+                          color: #f05232;
+                          transform: scale(1.2);
                         }
                         
 /*--- Social Meida Hover Colours ---  */

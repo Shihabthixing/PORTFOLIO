@@ -52,7 +52,7 @@ var logoDiv = document.getElementById("logo");
 var menu = document.getElementById("menuDcrease");
 
       function scrollFuntion(){
-        if (document.documentElement.scrollTop > 500){
+        if (document.documentElement.scrollTop > 250){
               headerDiv.style.backgroundColor = "#131313ea";
               logoDiv.style.width ="100px";
               logoDiv.style.paddingTop = "3px";

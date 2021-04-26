@@ -1,6 +1,6 @@
 :root {--majorcolor: #0c0c0c}
 :root{--whiteLetter:#cacaca}
-:root{--red-color: red}
+:root{--red-color: #d82a2a}
 :root{--Black:#000000}
 :root{--GrayLetter:#b3b3b3}
 :root{--Grd-Dark:#353536}
@@ -32,6 +32,11 @@ body, h1, h2, h3, h4, h5, p, ol, ul{
     list-style: none;
     font-family: 'Montserrat', sans-serif;
 }
+p{
+  
+  font-size: 16px;
+  line-height: 25px;
+}
 
 a{
     text-decoration: none ; 
@@ -45,6 +50,9 @@ a:hover{
 }
 .fa{
   color: var(--red-color);
+}
+img{
+  width: 100%;
 }
 
 
@@ -486,7 +494,7 @@ a:hover{
                         .text-container h4{
                           background: #ff0000b9;
                           padding: 10px 20px;
-                          width: 90px;
+                          display: inline-block;
                           font-weight: 500;
                           border-top-left-radius: 20px;
                           border-top-right-radius: 20px;
@@ -569,11 +577,11 @@ a:hover{
                       align-items: center;
                       margin-bottom: 20px;
                     }
-                    .right-container .freelancer h3{
+                    .right-container .freelancer h2{
                       color: var(--red-color);
                       letter-spacing: 1px;
                       font-weight: 800;
-                      font-size: 18px;
+                      font-size: 24px;
                     }
                     
                     .right-container .freelancer span{
@@ -583,19 +591,17 @@ a:hover{
                       margin-left: 12px;
                     }
 
-              .right-container h2 {
+              .right-container h3 {
                 margin: -230px 0px 25px 40px ;
                 line-height: 32px;
                 font-size: 23px;
                 font-weight: 600;
               }
-              .right-container h2 p{
-                font-size: 16px;
-                line-height: 23px;
+              .right-container h3 p{
                 margin-top: 15px;
               }
 
-              .right-container h2::before{
+              .right-container h3::before{
                 content: "";
                 display: block;
                 background: var(--red-color);
@@ -609,7 +615,6 @@ a:hover{
                 
                 .right-container .fa-envelope  {
                   padding: 0px 20px 5px  0px;
-                  font-size: 14px;
                 }
                 .right-container .fa-phone{
                   padding: 0px 20px 5px  0px;
@@ -619,7 +624,8 @@ a:hover{
                 .right-container .headerpage-contact a {
                   color: white;
                   font-weight: 100;
-
+                  font-size: 18px;
+                  font-family: 'Poppins', sans-serif;
                 }
 
 /*------------- @@@@@@@@@@  Min Width BANNER   ------------ */
@@ -762,7 +768,7 @@ a:hover{
   width: 100%;
   height: 200px;
   display: block;
-  background: linear-gradient(#0c0c0c00,#0c0c0c);
+  background: linear-gradient(#0c0c0c00, var(--majorcolor));
   position: absolute;
   bottom: 56.8%;
 }
@@ -902,17 +908,143 @@ a:hover{
                 /* <!------- Scrolling Pictures End  -------->  */
 
 
+                ::-webkit-scrollbar{
+                  width:10px;
+                }
+                ::-webkit-scrollbar-track{
+                  width: 20px;
+                  background: var(--Grd-Dark);
+                  border-left: 0px solid white;
+                  border-radius: 0px solid white;
+                }
+                ::-webkit-scrollbar-thumb{
+                  background: var(--red-color);
+                  width: 0px;
+                  height: 35%;
+                  transition: 0.5s ease;
+                  cursor: pointer;
+                  border-radius: 10px;
+
+                }
+
+
                 /* <!-------------------- About_Me_Start  -------------->  */
 
 
-                .about-container{
-                  background: #030303;
+                .about{
+                  background: linear-gradient(var(--majorcolor), var(--majorcolor));
                   height: 100vh;
                   width: 100%;
                   z-index: 10;
                   position: relative;
-                  top: 150px;
+                  top: 200px;
+                  display: flex;
+                  justify-content: center;
+                  flex-wrap: wrap;
+                  align-items: flex-start;
+                  position: relative;
+                  padding-top: 100px;
                 }
+                    .about-row{
+                      width: 83%;
+                      display: flex;
+                      justify-content: space-around;
+                      flex-wrap: wrap;
+                      align-items: center;
+                      position: relative;
+                    }
+
+
+                /*---------  Left Container--------  */
+
+                          .about-left{
+                            max-width: 500px;
+                            position: relative;
+                          }
+
+                                .about .about-row .about-left h2{
+                                  color: var(--red-color);
+                                  letter-spacing: 1px;
+                                  font-weight: 800;
+                                  font-size: 24px;
+                                  float: left;
+                                }
+                                .about .about-row .about-left p{
+                                  margin-top: 35px;
+                                }
+
+                                .about .about-row .about-left .title-line{
+                                  width: 50px;
+                                  height: 2px;
+                                  margin-left: 12px;
+                                  background: var(--red-color);
+                                  display: inline-block;
+
+                                }
+                                    .about .about-row .about-left .my-work{
+                                      display: flex;
+                                      justify-content: space-between;
+                                    }
+
+                                          .about .about-row .about-left .my-work li{
+                                            position: relative;
+                                            font-size: 14px;
+                                            padding: 10px 0px 10px 20px ;
+                                            text-transform: uppercase;
+                                            letter-spacing: .5px;
+                                          }
+                                          .about .about-row .about-left .my-work li::before{
+                                            content: "";
+                                            width: 7px;
+                                            height: 7px;
+                                            border-radius: 50%;
+                                            background: var(--whiteLetter);
+                                            position: absolute;
+                                            left: -3.6px;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                          }
+                                          .about .about-row .about-left .my-work li:not(:last-child):after{
+                                            content: "";
+                                            width: 1px;
+                                            height: 120%;
+                                            background: var(--whiteLetter);
+                                            position: absolute;
+                                            left: 0px;
+                                            top: 40%;
+                                          }
+                                          .about .about-row .about-left .my-work ul li span {
+                                            font-weight: 700;
+                                            color: var(--red-color);
+                                          }
+
+                                .about .about-row .about-left .my-work ul {
+                                  margin-top: 35px;
+                                }
+
+                                .about .about-row .about-left .download-button a{
+                                  background: #ff0000b9;
+                                  padding: 10px 20px;
+                                  display: inline-block;
+                                  font-weight: 600;
+                                  border-radius: 40px;
+                                  color: var(--whiteLetter);
+                                  margin-top: 40px;
+                                }
+
+                    .about-right{
+                        max-width: 450px;
+                    }
+
+
+
+
+
+
+
+                
+                /* <!-------------------- About_Me_End  -------------->  */
+
 
                 .skill-container{
                   background: #7fb32ca6;
@@ -921,7 +1053,3 @@ a:hover{
                   z-index: 10;
                   position: relative;
                 }
-
-                /* <!-------------------- About_Me_End  -------------->  */
-
-

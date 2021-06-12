@@ -23,7 +23,6 @@ body{
     height: 100vh;
     width:  100%;
 }
-
 body, h1, h2, h3, h4, h5, p, ol, ul{
     margin: 0px;
     padding: 0px;
@@ -33,11 +32,9 @@ body, h1, h2, h3, h4, h5, p, ol, ul{
     font-family: 'Montserrat', sans-serif;
 }
 p{
-  
   font-size: 16px;
   line-height: 25px;
 }
-
 a{
     text-decoration: none ; 
     list-style: none;
@@ -54,10 +51,7 @@ a:hover{
 img{
   width: 100%;
 }
-
-
 /*----------------- Navigation Header  ---------------- */
-
 .header .nav_top{
     position: fixed;
     z-index: 11;
@@ -103,13 +97,10 @@ img{
 	    background-size: 200% 100%; 
 	    background-position: 100%;
 }
-
-
 .header .menu li a:hover {
   transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
   background-position: 0%;
 }
-
 .wrap{
   display: flex;
   width: 100%;
@@ -120,8 +111,6 @@ img{
 
 
                         /*----------------- Hamburger Open ---------------- */
-
-
                         .header .sidemenu-toggler{
                           position: absolute;
                           width: 25px;
@@ -131,7 +120,6 @@ img{
                           cursor: pointer;
                           z-index: 12;
                         }
-
                         .header .sidemenu-toggler > span{
                           display: block;
                           background: white;
@@ -141,7 +129,6 @@ img{
                           transition: 0.1s all; 
                           transition: .1s all; 
                         }
-
                         .header .sidemenu-toggler > span:nth-child(2){
                           margin: 4px 0px 4px auto;
                           width: 75%;
@@ -152,14 +139,11 @@ img{
                           margin: 4px 0px 4px auto;
                           transition: 0.6s all; 
                         }
-
                         .header .sidemenu-toggler:hover > span:nth-child(2),
                         .header .sidemenu-toggler:hover > span:nth-child(3){
                           width: 100%;
                         }
-
                         /*----------------- Side Menu Nav  ---------------- */
-
                         .header .sidemenu {
                           position: fixed;
                           top: 0px;
@@ -174,12 +158,9 @@ img{
                           z-index: 11;
                           font-family: 'Oswald', sans-serif;
                         }
-
                         .header .sidemenu.active{
-                          
                           transform: scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
                         }
-
                         .header .sidemenu nav ul{
                           padding-top: 35px;
                         }
@@ -192,7 +173,6 @@ img{
                           color: white;
                           font-weight: 200;
                           position: relative;
-                          
                         }
                         .header .sidemenu nav ul li a::after{
                           content: "";
@@ -206,17 +186,11 @@ img{
                           -webkit-transform: translateX(-90px) scaleX(0);
                           transform-origin: left;
                           transition: .3s ease;
-                          
                         }
-
                         .header .sidemenu nav ul li a:hover::after{
                           transform: translateX(-50px);
                         }
-
-                         
-
                         /*-------------------- Side Menu Icons ------------------ */
-
                         .header .sidemenu footer .social{
                           display: flex;
                           align-items: center;
@@ -224,7 +198,6 @@ img{
                           width: 60%;
                           margin: 50px 0px 15px 0px;
                         }
-
                         .header .sidemenu footer .social li a {
                           display: block;
                           text-align: center;
@@ -238,11 +211,9 @@ img{
                           padding: 3px;
                           margin: 0px 10px 0px 5px;
                         }
-
                         .header .sidemenu footer .social li a:hover{
                           box-shadow: 0 2px 3px #000000;
                         }
-
                         .header .sidemenu footer .social li a .fa{
                           background: linear-gradient(180deg, var(--Grd-Dark), var(--Grd-Light));
                           width: 100%;
@@ -266,19 +237,15 @@ img{
                         .header .sidemenu footer .social li:nth-child(4) a:hover .fa{
                           color: #55acee;
                         }
-
-
                         footer p{
                           letter-spacing: 2px;
                           text-transform: uppercase;
                           font-family: 'Oswald', sans-serif;
                           font-weight: 200;
                           letter-spacing: 3px;
-                          
                         }
 
                         /*----------------- Hamburger Close ---------------- */
-                      
                         .sidemenu .sidemenu-open-toggler{
                           width: 18px;
                           height: 18px;
@@ -301,14 +268,12 @@ img{
                           box-shadow: 0 5px 14px #000000;
                           transition: 0.3s all;
                         }
-
                         .sidemenu .sidemenu-open-toggler:hover:before {
                           box-shadow: 0 2px 3px #000000;
                         }
                         .sidemenu .sidemenu-open-toggler:hover > span {
                           background-color: var(--red-color);
                         }
-
                         .sidemenu .sidemenu-open-toggler::after{
                           content: "";
                           background: linear-gradient(180deg, var(--Grd-Dark), var(--Grd-Light));
@@ -318,10 +283,7 @@ img{
                           border-radius: 50%;
                           padding: 10px;
                           margin: -42px 0px 0px -10px;
-
                         }
-                        
-
                         .sidemenu .sidemenu-open-toggler > span{
                           display: block;
                           background: var(--GrayLetter);
@@ -331,24 +293,20 @@ img{
                           position: absolute;
                           top: 50%;
                           -webkit-transform: translateY(-2px) translateX(-1px) rotate(-45deg);
-                          
-                        }
+                          }
                         .sidemenu .sidemenu-open-toggler > span:nth-child(2){
                           -webkit-transform: translateY(-2px) translateX(-1px)rotate(45deg);
                           overflow: hidden;
-                          
                         }
 
 
                         /*------------- @@@@@@@@@@  Side Menu start  ------------ */
-
                         @media (max-width: 750px ){
                           .header .sidemenu {
                             width: 80%;
                             padding: 0px;
                             text-align: center;
                           }
-
                           .header .sidemenu nav ul{
                             padding-top: 70px;
                           }
@@ -363,47 +321,36 @@ img{
                           }
                           .sidemenu .sidemenu-open-toggler{
                             right: 18px;
-                          }
-
-                        }
+                          } }
                           
                         /*------------- @@@@@@@@@@ Side Menu End  ------------ */
 
-
 /* <!--------------- Scrolling Pictures  ------------------->  */
-
-
 .keyart,
   .keyart_layer {
     height: 100vh;
   }
-  
   #parallax {
     display: block;
   }
-  
   .keyart {
     z-index: 10;
   }
-  
   .keyart_layer {
     background-position: bottom center;
     background-size: auto;
     width: 100%;
     position: absolute;
   }
-  
   .keyart_layer.parallax {
     position: fixed;
   }
-  
   #sky-0 {
     background-image: url("./00-SKY.jpg");
     background-repeat: no-repeat;
     background-position: top;
     max-width: 2100px;
   }
-
   #mountaine-1 {
     background-image: url("./01-Mountaine.png");
     background-repeat: no-repeat;
@@ -411,7 +358,6 @@ img{
     margin-top: 110px;
     width: 2100px;
   }
-
   #mountaine-2 {
     background-image: url("./02-Mountaine.png");
     background-repeat: no-repeat;
@@ -427,9 +373,7 @@ img{
     margin-top: 360px;
     mix-blend-mode: multiply;
     opacity: 85%;
-    
   }
-
   #trees-3 {
     background-image: url("./03-Tree.png");
     background-repeat: no-repeat;
@@ -438,7 +382,6 @@ img{
     margin-top: 370px;
     width: 2100px;
   }
-
    #trees-3-shadow{
     background: linear-gradient(to top, #00000000,  #000000, #00000000  );
     width: 2100px;
@@ -453,16 +396,13 @@ img{
     margin-top: 370px;
     width: 2100px;
   }
-
   #trees-4-shadow{
     background: linear-gradient(to top, #00000000,  #000000, #00000000  );
     width: 2100px;
     height: 250px;
     margin-top:600px;
   }
-
   /* <!-------------- Banner Section-------------->  */
-
   #banner-container{
     width: 100%;
     display: flex;
@@ -480,7 +420,6 @@ img{
           }
 
 /*--------- Left Container ------*/
-
             .left-container{
               display: flex;
               flex-wrap: wrap;
@@ -519,7 +458,6 @@ img{
                           font-weight: 500;
                           letter-spacing: 0px;
                         }
-                        
                         .text-container .socialmedia{
                           margin-top: 40px;
                           display: flex;
@@ -532,7 +470,6 @@ img{
                           cursor: pointer;
                           transition: all .2s ease-in-out;
                         }
-                        
                         .text-container .socialmedia li:nth-child(1) a:hover .fa{
                           color: #e0228f;
                           transform: scale(1.2);
@@ -555,8 +492,6 @@ img{
                         }
                         
 /*--- Social Meida Hover Colours ---  */
-                        
-
                   .img-container{
                     width: 230px;
                   }
@@ -564,9 +499,7 @@ img{
                           width: 240px;
                         }
 
-
 /*--------- Right Container ------*/
-
             .right-container{
               width: 374px;
               background-image: radial-gradient(  #000000b9 10% , #00000000 70%);
@@ -583,14 +516,12 @@ img{
                       font-weight: 800;
                       font-size: 24px;
                     }
-                    
                     .right-container .freelancer span{
                       width: 50px;
                       height: 2px;
                       background: var(--red-color);
                       margin-left: 12px;
                     }
-
               .right-container h3 {
                 margin: -230px 0px 25px 40px ;
                 line-height: 32px;
@@ -600,7 +531,6 @@ img{
               .right-container h3 p{
                 margin-top: 15px;
               }
-
               .right-container h3::before{
                 content: "";
                 display: block;
@@ -611,8 +541,6 @@ img{
                 bottom: -235px;
                 left: -40px;
               }
-
-                
                 .right-container .fa-envelope  {
                   padding: 0px 20px 5px  0px;
                 }
@@ -620,7 +548,6 @@ img{
                   padding: 0px 20px 5px  0px;
                   font-size: 18px;
                 }
-
                 .right-container .headerpage-contact a {
                   color: white;
                   font-weight: 100;
@@ -629,28 +556,22 @@ img{
                 }
 
 /*------------- @@@@@@@@@@  Min Width BANNER   ------------ */
-
               @media (min-width: 1750px ){
-
                 /*--------- Left Container ------*/
-                
                     .text-container{
                       max-width: 410px;
                     }
                         .text-container h1{
                           font-size: 120px;
                         }
-
                         .text-container .socialmedia .fa {
                           font-size: 24px;
                         }
-
                               .img-container img{
                                 width: 260px;
                               }
                 
                 /*--------- Right Container ------*/
-                
                 .right-container{
                   width: 450px;
                 }
@@ -660,35 +581,22 @@ img{
                 .right-container .fa-phone{
                   font-size: 25px;
                 }
-
                 .right-container .headerpage-contact a {
                   font-size: 20px;
-                }
-              }
+                } }
                 
-        
-
  /*------------- @@@@@@@@@@  Max Width For BANNER Start  ------------ */
-
-
               @media (max-width: 1093px ){
-
-                
 /* ----- Header container -----  */
-              
 .header .menu {
   display: none;
 }
-
 .wrap{
   height:  43px;
   justify-content: start;
   padding: 0px 15px;
 }
-
                 /* ----- Left container-----  */
-
-
                 .left-container{
                   padding: 0px;
                   justify-content: center;
@@ -699,9 +607,7 @@ img{
                       text-align: left;
                       position: absolute;
                       top: 350px;
-                      
                     }
-                       
                         .text-container h4{
                           width: 100%;
                           background: none;
@@ -723,7 +629,6 @@ img{
                           margin-top: -0px;
                           color: var(--red-color);
                         }
-                        
                   .img-container{
                     width: 230px;
                     position: absolute;
@@ -733,17 +638,10 @@ img{
                         .img-container img{
                           width: 100%;
                         }
-
                 /*--------- Right Container ------*/
-
                 .right-container{
                   display: none;
-                }
-
-              }
-                          
-
-
+                } }
  /* <!-------------- Banner Section End -------------->  */
 
   #trees-5 {
@@ -752,7 +650,6 @@ img{
     background-position: top;
     margin-top: 550px;
     width: 2100px;
-    
   }
   #trees-5:after{
     content: "";
@@ -775,7 +672,6 @@ img{
 #tree-5-5{
   display: none;
 }
-  
   #trees-6 {
     background-image: url("./06-Tree-new.png");
     background-repeat: no-repeat;
@@ -784,20 +680,12 @@ img{
     max-width: 2100px;
     z-index: 2;
   }
-
-  
- 
   /*--- Top Overflow ---  */
-
   #keyart-scrim {
     opacity: 1;
   }
-
-
   /*------------- @@@@@@@@@@  Side Menu start  ------------ */
-
  /*------------  For Height effect scrooling --------  */
-
   @media (max-height: 800px ){
     #mountaine-1 {
       margin-top: 80px;
@@ -807,35 +695,25 @@ img{
     }
     #mountaine-2-shadow{
       margin-top: 260px;
-      
     }
     #trees-3 {
       margin-top: 270px;
     } 
-    
    #trees-3-shadow{
     margin-top: 350px;
-    
   } 
     #trees-4{
       margin-top: 255px;
     }
     #trees-5 {
       margin-top: 400px;
-      
-    }  #trees-6 {
+    }  
+    #trees-6 {
       margin-top: 700px;
-    }
-  
-  }
-
-                /*------------  For Mobile Device --------  */
-
-
-                /* <!------- Scrolling Pictures  -------->  */
-
+    }}
+ /*------------  For Mobile Device --------  */
+          /* <!------- Scrolling Pictures  -------->  */
                 @media (max-width: 600px){
-
                   #sky-0 {
                     background-image: url("./00-SKY.jpg");
                     background-repeat: no-repeat;
@@ -859,19 +737,16 @@ img{
                   #mountaine-2-shadow{
                     width: 600px;
                     margin-top: 250px;
-                    
                   }
                   #trees-3 {
                     display: none;
                   }
-                
                   #trees-4{
                     background-image: url("./04-Tree\ -\ Mobile.png");
                     margin-top: 0px;
                     width: 600px;
                     background-position: center;
                   }
-              
                   #trees-5 {
                     background-image: url("./05-Tree-Mobile.png");
                     background-position: center;
@@ -880,7 +755,7 @@ img{
                   }
                   #trees-5:after{
                     display: none;
-                }
+                 }
                   #trees-5:before{
                     display: none;
                 }
@@ -895,19 +770,11 @@ img{
                   #trees-6 {
                     background-image: url("./06-Tree-new\ Mobile.png");
                     background-position: center;
-                    margin-top: 500px;
-                    height: 100%;
+                    margin-top: 560px;
+                    height: 80%;
                     width: 100%;
-                  }
-                  #trees-6:after{
-                    top: 70%;
-                }
-                }
-               
-
+                  } }
                 /* <!------- Scrolling Pictures End  -------->  */
-
-
                 ::-webkit-scrollbar{
                   width:10px;
                 }
@@ -924,13 +791,8 @@ img{
                   transition: 0.5s ease;
                   cursor: pointer;
                   border-radius: 10px;
-
                 }
-
-
                 /* <!-------------------- About_Me_Start  -------------->  */
-
-
                 .about{
                   background: linear-gradient(var(--majorcolor), var(--majorcolor));
                   height: 100vh;
@@ -953,15 +815,11 @@ img{
                       align-items: center;
                       position: relative;
                     }
-
-
                 /*---------  Left Container--------  */
-
                           .about-left{
                             max-width: 500px;
                             position: relative;
                           }
-
                                 .about .about-row .about-left h2{
                                   color: var(--red-color);
                                   letter-spacing: 1px;
@@ -972,20 +830,17 @@ img{
                                 .about .about-row .about-left p{
                                   margin-top: 35px;
                                 }
-
                                 .about .about-row .about-left .title-line{
                                   width: 50px;
                                   height: 2px;
                                   margin-left: 12px;
                                   background: var(--red-color);
                                   display: inline-block;
-
                                 }
                                     .about .about-row .about-left .my-work{
                                       display: flex;
                                       justify-content: space-between;
                                     }
-
                                           .about .about-row .about-left .my-work li{
                                             position: relative;
                                             font-size: 14px;
@@ -1017,11 +872,9 @@ img{
                                             font-weight: 700;
                                             color: var(--red-color);
                                           }
-
                                 .about .about-row .about-left .my-work ul {
                                   margin-top: 35px;
                                 }
-
                                 .about .about-row .about-left .download-button a{
                                   background: #ff0000b9;
                                   padding: 10px 20px;
@@ -1031,21 +884,11 @@ img{
                                   color: var(--whiteLetter);
                                   margin-top: 40px;
                                 }
-
                     .about-right{
                         max-width: 450px;
                     }
 
-
-
-
-
-
-
-                
                 /* <!-------------------- About_Me_End  -------------->  */
-
-
                 .skill-container{
                   background: #7fb32ca6;
                   height: 100vh;

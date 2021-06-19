@@ -10,7 +10,6 @@
 
 
 /*------------- Common Styles -------------- */
-
 html{
     box-sizing: border-box;
     font-size: 16px;
@@ -108,7 +107,6 @@ img{
   justify-content: space-around;
   transition: .6s ease-in-out;
 }
-
 
                         /*----------------- Hamburger Open ---------------- */
                         .header .sidemenu-toggler{
@@ -402,6 +400,7 @@ img{
     height: 250px;
     margin-top:600px;
   }
+  
   /* <!-------------- Banner Section-------------->  */
   #banner-container{
     width: 100%;
@@ -638,12 +637,13 @@ img{
                         .img-container img{
                           width: 100%;
                         }
+
                 /*--------- Right Container ------*/
                 .right-container{
                   display: none;
                 } }
- /* <!-------------- Banner Section End -------------->  */
 
+ /* <!-------------- Banner Section End -------------->  */
   #trees-5 {
     background-image: url("./05-Tree.png");
     background-repeat: no-repeat;
@@ -680,10 +680,12 @@ img{
     max-width: 2100px;
     z-index: 2;
   }
+
   /*--- Top Overflow ---  */
   #keyart-scrim {
     opacity: 1;
   }
+
   /*------------- @@@@@@@@@@  Side Menu start  ------------ */
  /*------------  For Height effect scrooling --------  */
   @media (max-height: 800px ){
@@ -711,6 +713,7 @@ img{
     #trees-6 {
       margin-top: 700px;
     }}
+
  /*------------  For Mobile Device --------  */
           /* <!------- Scrolling Pictures  -------->  */
                 @media (max-width: 600px){
@@ -774,6 +777,7 @@ img{
                     height: 80%;
                     width: 100%;
                   } }
+
                 /* <!------- Scrolling Pictures End  -------->  */
                 ::-webkit-scrollbar{
                   width:10px;
@@ -792,6 +796,7 @@ img{
                   cursor: pointer;
                   border-radius: 10px;
                 }
+
                 /* <!-------------------- About_Me_Start  -------------->  */
                 .about{
                   background: linear-gradient(var(--majorcolor), var(--majorcolor));
@@ -799,13 +804,13 @@ img{
                   width: 100%;
                   z-index: 10;
                   position: relative;
-                  top: 200px;
+                  top: -1.5rem;
                   display: flex;
                   justify-content: center;
                   flex-wrap: wrap;
                   align-items: flex-start;
                   position: relative;
-                  padding-top: 100px;
+                  padding-top: 5rem;
                 }
                     .about-row{
                       width: 83%;
@@ -862,11 +867,11 @@ img{
                                           .about .about-row .about-left .my-work li:not(:last-child):after{
                                             content: "";
                                             width: 1px;
-                                            height: 120%;
+                                            height: 100%;
                                             background: var(--whiteLetter);
                                             position: absolute;
-                                            left: 0px;
-                                            top: 40%;
+                                            left: -1px;
+                                            top: 50%;
                                           }
                                           .about .about-row .about-left .my-work ul li span {
                                             font-weight: 700;
@@ -885,7 +890,18 @@ img{
                                   margin-top: 40px;
                                 }
                     .about-right{
-                        max-width: 450px;
+                        max-width: 400px;
+                        min-width: 200px;
+                    }
+                    
+                    @media (max-width: 1160px){
+                      .about-left{
+                        top: 200px;
+                      }
+                      .about .about-row .about-right .about-img{
+                        position: relative;
+                        top: -45rem;
+                      }
                     }
 
                 /* <!-------------------- About_Me_End  -------------->  */

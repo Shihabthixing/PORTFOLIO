@@ -909,7 +909,7 @@ img{
                     @media (max-width: 1090px){
                       .about-left{
                         position: absolute;
-                        top: 50px;
+                        top: 00px;
                       }
                       .about .about-row .about-left p{
                         margin-top: 10px;
@@ -918,7 +918,7 @@ img{
                       }
                       .about-right{
                         position: absolute;
-                        bottom: -50px;
+                        bottom: 0px;
                         max-width: 280px;
                     }
                     }

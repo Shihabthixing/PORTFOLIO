@@ -361,7 +361,7 @@ img{
       .banner{
           display: flex;
           width: 83%;
-          justify-content: space-around;
+          justify-content: space-evenly;
           flex-wrap: wrap;
           align-items: flex-end;
           }
@@ -908,39 +908,116 @@ img{
 
                 /* <!-------------------- About_Me_End  -------------->  */
                 /* <!-------------------- Skill_Start  --------------> */
-                .skill-container{
-                  background: #497208de;
+                /* .skill-container{
                   width: 100%;
-                  height: 100vh;
                   z-index: 10;
                   position: relative;
-                  margin: 0px auto;
+                  background: var(--Black);
+                  background: darkcyan;
                 }
-                        .skill-container .skill-coloum .skill-title h2{
-                          color: var(--red-color);
-                          letter-spacing: 1px;
-                          font-weight: 800;
-                          font-size: 24px;
-                          float: left;
-                          text-transform: uppercase;
-                          float: left;
-                        }
-                        .skill-container .skill-coloum .skill-title .title-line{
-                          width: 50px;
-                          height: 2px;
-                          margin-left: 12px;
-                          background: var(--red-color);
-                          display: inline-block;
-                        }
-                    .skill-container .skill-coloum .skill-row {
+                                .skill-container .skill-coloum .skill-title h2{
+                                  color: var(--red-color);
+                                  letter-spacing: 1px;
+                                  font-weight: 800;
+                                  font-size: 24px;
+                                  float: left;
+                                  text-transform: uppercase;
+                                  float: left;
+                                }
+                                .skill-container .skill-coloum .skill-title .title-line{
+                                  width: 50px;
+                                  height: 2px;
+                                  margin-left: 12px;
+                                  background: var(--red-color);
+                                  display: inline-block;
+                                }
+                      .skill-container .skill-coloum{
                       width: 83%;
-                      height: 100vh;
-                      position: relative;
-                      background: #e0228e79;
+                      background: darkgray;
                       margin: 0px auto;
+                      display: grid;
+                      }
+                    .skill-container .skill-coloum .skill-row {
+                      display: flex;
+                      justify-content: space-evenly;
+                      align-items: center;
+                      flex-wrap: wrap;
+                      position: relative;
+                      background: #7e1717;
+                      margin: 0px auto;
+                      width: 100%;
+                      height: 80%;
+                    } 
+                    .skill-container .skill-coloum .skill-row .col .svg-img img{
+                      width: 100px;
                     }
-                    .skill-container .skill-coloum .skill-row .col-2 .svg-img img{
-                      width: 120px;
-                    }
+                    .skill-container .skill-coloum .skill-row .col{
+                      max-width: 250px;
+                      background: #db8d18ea;
+                    } */
 
+                /* <!-- !-------------------- Skill_End  --------------> */
+
+
+
+
+                /* <!-------------------- Skill_Start  --------------> */
+                  .skill-container{
+                    width: 100%;
+                    height: 80vh;
+                    z-index: 10;
+                    position: relative;
+                    background: var(--Black);
+                  }
+                  .skill-coloum{
+                    margin: 50px auto;
+                  }
+                          .skill-title{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 5px auto 50px auto;
+                          }
+                          .skill-container .skill-coloum .skill-title h2{
+                            color: var(--red-color);
+                            letter-spacing: 1px;
+                            font-weight: 800;
+                            font-size: 24px;
+                            float: left;
+                            text-transform: uppercase;
+                            float: left;
+                          }
+                          .skill-container .skill-coloum .skill-title .title-line{
+                            width: 50px;
+                            height: 2px;
+                            margin-left: 12px;
+                            background: var(--red-color);
+                            display: inline-block;
+                          }
+                   
+                  .skill-coloum ul{
+                    width: 100%;
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: -o-flex;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                  }
+                  .skill-row li{
+                    padding: 0px 80px;
+                    flex-basis: 33%;
+                    padding: 20px;
+                    margin: 15px;
+                    background: rgba(190, 72, 206, 0.514);
+                    text-align: center;
+                  }
+
+
+                  .skill-container .skill-coloum .skill-row{
+                  }
+                  .skill-container .skill-coloum .skill-row .col .svg-img img{
+                    width: 100px;
+                  }
                 /* <!-- !-------------------- Skill_End  --------------> */

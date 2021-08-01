@@ -803,8 +803,8 @@ img{
 
                 /* <!-------------------- About_Me_Start  -------------->  */
                 .about{
-                  height: 100vh;
                   width: 100%;
+                  height: 100vh;
                   z-index: 10;
                   position: relative;
                   display: flex;
@@ -918,7 +918,7 @@ img{
                   .skill-container{
                     width: 100%;
                     height: 100%;
-                    z-index: 10;
+                    z-index: 9;
                     position: relative;
                     background: var(--Black);
                   }
@@ -936,7 +936,6 @@ img{
                             letter-spacing: 1px;
                             font-weight: 800;
                             font-size: 24px;
-                            float: left;
                             text-transform: uppercase;
                             float: left;
                           }
@@ -950,7 +949,7 @@ img{
                    
                   .skill-coloum ul{
                     width: 100%;
-                    height: 80vh;
+                    height: 90vh;
                     display: -webkit-flex;
                     display: -moz-flex;
                     display: -ms-flex;
@@ -962,7 +961,6 @@ img{
                   .skill-row li{
                     padding: 0px 80px;
                     flex-basis: 33%;
-                    padding: 20px ;
                     margin: 15px;
                     text-align: center;
                   }
@@ -989,5 +987,21 @@ img{
                         max-width: 500px;
                         margin: 0px auto;
                       }
+                    }
+                    @media (max-width: 1090px){
+                      .skill-title{
+                        display: flex;
+                        margin-top: 50px;
+                        padding: 120px 20px 15px 20px;
+                      }
+                      .skill-coloum ul{
+                        height: 200vh;
+                      }
+                      .skill-row li{
+                        flex-basis: 100%;
+                        padding: 10px ;
+                        margin: 10px;
+                      }
+                    }
                     }
                 /* <!-- !-------------------- Skill_End  --------------> */
